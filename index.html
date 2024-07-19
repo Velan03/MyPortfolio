@@ -3,28 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CoderVelan.com</title>
+    <title>VelanDevport</title>
     <link rel="stylesheet" href="./main.css">
 </head>
 <body>
-    <section class="ex1">
-     <div id="name">
-        Hi, I am Velan.S <br>
-        I am a Java Full-Stack Developer        
-    </div><br>
-    <div id="bio">
-       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id neque, modi nulla cum obcaecati ipsum ipsa autem odio nihil.
+    <header class="head">
+        <nav class="nav-bar">
+            <div id="navdiv">
+                <div id="name">VelanDevport</div>
+                <ul>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./future.html">Goals</a></li>
+                    <li><a href="./skills.html">Skills</a></li>
+                    <li><a href="./project.html">Projects</a></li>
+                    <li class="dropdown">
+                        <a href="#" id="contact-link">Contact</a>
+                        <div class="dropdown-content">
+                            <a target="_blank" href="https://www.linkedin.com/in/velan-s-845791250">LinkedIn</a>
+                            <a target="_blank" href="https://github.com/Velan03">GitHub</a>
+                            <a target="_blank" href="mailto:velansivasankaran15@gmail.com">Gmail</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="intro">
+            <div class="header-content">
+                <h1>Hi, I am Velan S</h1>
+                <h2>I am a Full-Stack Developer</h2>
+            </div>
+        </div>
+    </header>
+
+    <div class="content">
+        <div class="img">
+            <img src="./images.jpg" width="600px" height="550px" alt="Hi, I am Velan S">
+        </div>
+        <main>
+            <section class="about">
+                <div id="self">
+                    <p>Hello! I'm Velan, a passionate and dedicated Computer Engineering and Science graduate from Sri Muthukumaran Institute of Technology, graduated in 2023. With a solid foundation in both theoretical and practical aspects of computer engineering, I am eager to apply my skills in software development, system analysis, and emerging technologies to solve real-world problems.</p>
+                    <a href="./about.html">about Me -></a>
+                </div>
+            </section>
+        </main>
     </div>
-    <aside id="image">
-        <img src="./images.jpg" alt="">
-    </aside>
-</section>
-   <section class="ex2">
-    <div id="content1">
-        velan body 2
-    </div>
-    <div id="content2"> v bos 2</div>
-   </section>
-    
+
+    <footer class="contact">
+        <div id="links">
+            <a target="_blank" href="https://www.linkedin.com/in/velan-s-845791250">LinkedIn</a>
+            <a target="_blank" href="https://github.com/Velan03">GitHub</a>
+            <a target="_blank" href="mailto:velansivasankaran15@gmail.com">Gmail</a>
+        </div>
+    </footer>
+
+    <script src="./main.js"></script>
 </body>
 </html>
