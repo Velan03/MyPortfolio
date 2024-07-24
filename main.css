@@ -5,17 +5,15 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    background-image: url('./index2.avif');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #202020;
+    color: #ffffff;
 }
 
 .nav-bar {
-    background: #444;
+    background: #202020;
     padding: 15px 10px;
+    /* font-family: 'Edu AU VIC WA NT Hand', cursive; */
+    font-family: 'Times New Roman', Times, serif;
 }
 
 #navdiv {
@@ -26,9 +24,10 @@ body {
 
 #name {
     font-size: 48px;
-    font-family: 'Edu AU VIC WA NT Hand', cursive;
+    /* font-family: 'Edu AU VIC WA NT Hand', cursive; */
     font-weight: bold;
     color: #fff;
+   /* filter: drop-shadow(1px 5px 4px aqua); */
 }
 
 .nav-bar ul {
@@ -44,7 +43,7 @@ body {
 }
 
 .nav-bar li a {
-    color: antiquewhite;
+    color: rgb(255, 255, 255);
     font-size: 20px;
     font-weight: bold;
     margin-right: 20px;
@@ -54,13 +53,15 @@ body {
 }
 
 .nav-bar li a:hover {
-    color: #db4d15;
-    background-color: #080808;
+    color: #000000;
+    background-color: #009cb1;
     border-radius: 20px;
 }
 
+/* Updated CSS */
+
 .dropdown-content {
-    display: none;
+    display: none; /* Default state */
     position: absolute;
     background-color: #363535;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
@@ -69,10 +70,11 @@ body {
     right: 0;
     min-width: 160px;
     padding: 10px 0;
+    border-radius: 8px;
 }
 
 .dropdown-content a {
-    color: black;
+    color: #fff;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -81,7 +83,9 @@ body {
 
 .dropdown-content a:hover {
     background-color: #ddd;
+    color: #202020;
 }
+
 
 .dropdown:hover .dropdown-content {
     display: block;
@@ -89,15 +93,17 @@ body {
 
 .intro {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-evenly;
     align-items: center;
     height: 100vh;
+    padding: 0 20px;
 }
 
 .header-content {
-    text-align: right;
-    margin-right: 100px; /* Adjust as needed */
+    text-align: center;
     color: #fff;
+    height: 300px;
+    width: 45%;
 }
 
 .intro h1 {
@@ -110,39 +116,48 @@ body {
     color: #666;
 }
 
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 20px;
+.full-stack {
+    color: aqua;
 }
 
 .img {
-    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
     text-align: center;
+    width: 45%;
+    position: relative;
+    filter: drop-shadow(10px 0px 10px aqua);
 }
 
 .img img {
     display: block;
-    width: 100%;
-    max-width: 600px;
+    max-width: 100%;
     height: auto;
     border-radius: 50%;
-    border: 10px solid gray;
+    position: relative;
+    z-index: 1;
 }
-
+/* 
 main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     flex: 1;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 700px;
+    background-color: #1d1d1d;
+    border-radius: 10px;
+    box-shadow: 20px 5px 10px rgba(0, 135, 145, 0.1);
     font-size: 20px;
     padding: 20px;
+    margin: 20px auto;
+    color: #202020;  
 }
 
 #self {
     padding: 20px;
+    background-color: rgb(34, 33, 33);
 }
 
 #self p {
@@ -151,11 +166,19 @@ main {
 
 #self a {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 20px 20px;
     border-radius: 20px;
     border: 2px solid;
     text-decoration: none;
+    color: #ffffff;
+    background-color: #181616;
+    transition: background-color 0.3s, color 0.3s;
 }
+
+#self a:hover {
+    background-color: #202020;
+    color: #000000;
+} */
 
 footer.contact {
     text-align: center;
@@ -175,3 +198,358 @@ footer.contact #links a {
 footer.contact #links a:hover {
     color: #db4d15;
 }
+
+
+
+/* 
+////////////////////////////////////// /      ABOUT  ////////////////////////////////////////////////// 
+*/
+
+/* CSS for .about section */
+
+.about {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center;
+    padding: 20px; /* Increased padding for better spacing */
+    background: #000; /* Fallback background color */
+    color: #fff; /* Text color to contrast with the background */
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row; /* Align items horizontally */
+    align-items: center; /* Center vertically */
+    justify-content: space-between; /* Space between text and image */
+    max-width: 1200px; /* Limit width for larger screens */
+    margin-bottom: 30px;
+}
+
+.text {
+    flex: 1; /* Take up available space */
+    max-width: 60%; /* Limit the width of text area */
+    padding: 10px;
+}
+
+.image {
+    flex: 1; /* Take up available space */
+    max-width: 35%; /* Limit the width of image */
+}
+
+.image img {
+    width: 100%; /* Full width of container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Rounded corners */
+}
+
+.about-extra {
+    background: rgba(0, 0, 0, 0.7);  
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    margin-top: 20px;   
+    max-width: 800px;  
+    width: 100%; 
+}
+
+.about-extra h2 {
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.about-extra ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.about-extra li {
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #db4d15;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;  
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b43c0f;
+}
+
+
+
+/* 
+////////////////////////////////////// /      Goals  ////////////////////////////////////////////////// 
+*/
+
+/* CSS for .future Goals section */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.goal {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    padding: 20px;
+    background-image: url('./goals.jpg');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  
+    color: #fff;  
+}
+
+.goal-content {
+    display: flex;
+    justify-content: space-between;  
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;  
+}
+
+.text {
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    max-width: 45%;  
+}
+
+.short-term {
+    margin-right: 10px;  
+}
+
+.long-term {
+    margin-left: 10px;  
+}
+
+.goal-content h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.goal-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.goal-list {
+    list-style: disc;  
+    padding-left: 20px;  
+}
+
+.goal-list li {
+    margin-bottom: 10px;  
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center; 
+    gap: 10px;  
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #db4d15;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b43c0f;
+}
+
+
+
+/* 
+////////////////////////////////////// /   SKILLS    ////////////////////////////////////////////////// 
+*/
+
+/* CSS for .SKILLS section */
+
+/* body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #1a1a1a;   Dark background color for contrast 
+} */
+
+.skills {
+    display: flex;
+    justify-content: space-between; /* Space between content and image */
+    align-items: center; /* Center items vertically */
+    padding: 40px;
+    min-height: 100vh; /* Full viewport height */
+    background: linear-gradient(to right, #1b1b1b, #1a1a1a); /* Subtle gradient background */
+    position: relative;
+}
+
+.skills-content {
+    max-width: 50%;
+    background: #1b1b1b; /* Dark background for the content area */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    color: #fff;
+}
+
+.skills-content h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.skills-content h3 {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+.skills-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills-content ol {
+    padding-left: 20px; /* Add indentation for ordered lists */
+}
+
+.skills-content li {
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.skills-image {
+    max-width: 40%;
+    display: flex;
+    justify-content: center; /* Center the image horizontally */
+    align-items: center;
+}
+
+.skills-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+}
+
+.cta-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    width: 100%;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: #db4d15;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b43c0f;
+    transform: scale(1.05);
+}
+
+
+
+
+
+
+/* 
+////////////////////////////////////// / PROJECTS    ////////////////////////////////////////////////// 
+*/
+
+/* CSS for .PROJECTS section */
+
+
+.project{
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: url('./carton-anime-comp.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5); /* Transparent overlay */
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}
+
+.project-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(31, 31, 31, 0.2);
+    border: 2px solid #001e30;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+}
+
+.project-box:hover {
+    background: rgba(37, 37, 37, 0.4);
+    transform: scale(1.05);
+}
+
+.cta-buttons {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 30px;
+    background-color: #db4d15;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #b43c0f;
+    transform: scale(1.05);
+}
+
+
+
+

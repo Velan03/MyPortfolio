@@ -5,9 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VelanDevport</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-    <header class="head">
+    <header>
         <nav class="nav-bar">
             <div id="navdiv">
                 <div id="name">VelanDevport</div>
@@ -15,10 +16,10 @@
                     <li><a href="./about.html">About</a></li>
                     <li><a href="./future.html">Goals</a></li>
                     <li><a href="./skills.html">Skills</a></li>
-                    <li><a href="./project.html">Projects</a></li>
+                    <li><a href="./projects.html">Projects</a></li>
                     <li class="dropdown">
-                        <a href="#" id="contact-link">Contact</a>
-                        <div class="dropdown-content">
+                        <a href="#" id="contact-link" aria-haspopup="true" aria-expanded="false">Contact</a>
+                        <div class="dropdown-content" role="menu">
                             <a target="_blank" href="https://www.linkedin.com/in/velan-s-845791250">LinkedIn</a>
                             <a target="_blank" href="https://github.com/Velan03">GitHub</a>
                             <a target="_blank" href="mailto:velansivasankaran15@gmail.com">Gmail</a>
@@ -30,33 +31,19 @@
         <div class="intro">
             <div class="header-content">
                 <h1>Hi, I am Velan S</h1>
-                <h2>I am a Full-Stack Developer</h2>
+                <h2>I am a <span class="full-stack">Full-Stack Developer</span></h2>
+            </div>
+            <div class="img">
+                <img src="./profile3.jpg" alt="Profile picture of Velan S">
             </div>
         </div>
     </header>
-
-    <div class="content">
-        <div class="img">
-            <img src="./images.jpg" width="600px" height="550px" alt="Hi, I am Velan S">
-        </div>
-        <main>
-            <section class="about">
-                <div id="self">
-                    <p>Hello! I'm Velan, a passionate and dedicated Computer Engineering and Science graduate from Sri Muthukumaran Institute of Technology, graduated in 2023. With a solid foundation in both theoretical and practical aspects of computer engineering, I am eager to apply my skills in software development, system analysis, and emerging technologies to solve real-world problems.</p>
-                    <a href="./about.html">about Me -></a>
-                </div>
-            </section>
-        </main>
-    </div>
-
     <footer class="contact">
         <div id="links">
-            <a target="_blank" href="https://www.linkedin.com/in/velan-s-845791250">LinkedIn</a>
-            <a target="_blank" href="https://github.com/Velan03">GitHub</a>
-            <a target="_blank" href="mailto:velansivasankaran15@gmail.com">Gmail</a>
-        </div>
+            <i class="fa-brands fa-linkedin"></i> <a target="_blank" href="https://www.linkedin.com/in/velan-s-845791250">LinkedIn</a>
+            <i class="fa-brands fa-github"></i><a target="_blank" href="https://github.com/Velan03">GitHub</a>
+         </div>
     </footer>
-
     <script src="./main.js"></script>
 </body>
 </html>
